@@ -51,5 +51,7 @@ EncodeGenerator.py scans the Images/ folder and creates facial encodings.
 main.py loads these encodings and continuously captures webcam frames.
 
 If a face matches a known encoding:
+
   It fetches the student data from Firebase.
+  
   Marks attendance with timestamp and stores a snapshot in Firebase Storage.
