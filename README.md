@@ -30,17 +30,26 @@ This project leverages OpenCV and the `face_recognition` library to detect and r
 
 📦FaceRecognitionAttendance
 ┣ 📜 main.py # Main attendance script (webcam loop)
+
 ┣ 📜 EncodeGenerator.py # Generates encodings from student images
+
 ┣ 📜 Database.py # Firebase integration
+
 ┣ 📜 EncodeFile.p # Pickled known face encodings
+
 ┣ 📁 Images # Folder containing student face images
+
 ┣ 📁 AttendanceImages # Saved attendance snapshots
+
 ┣ 📜 firebase_config.py # Firebase configuration (hidden or ignored)
+
 ┗ 📜 README.md # Project documentation
 
 ## 🧠 How It Works
 EncodeGenerator.py scans the Images/ folder and creates facial encodings.
+
 main.py loads these encodings and continuously captures webcam frames.
+
 If a face matches a known encoding:
-It fetches the student data from Firebase.
-Marks attendance with timestamp and stores a snapshot in Firebase Storage.
+  It fetches the student data from Firebase.
+  Marks attendance with timestamp and stores a snapshot in Firebase Storage.
